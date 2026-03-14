@@ -42,7 +42,7 @@ export default function Register() {
     }
   };
 
-  const Field = ({ name, label, type = 'text', icon: Icon, placeholder, autoComplete }) => (
+  const Field = ({ name, label, type = 'text', icon: Icon, placeholder, autoComplete, form, onChange, showPw, setShowPw, errors }) =>  (
     <div>
       <label className="form-label">{label}</label>
       <div className="relative">
